@@ -1,0 +1,21 @@
+@import "./reset.css";
+
+
+
+body {
+    
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){  
+    
+    .app-container {
+
+        .app-menu {
+            color: red;
+            background: hsl(168, 34%, 41%);
+        }
+    }
+}
