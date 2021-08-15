@@ -1,9 +1,11 @@
 @import "./reset.css";
 
-
-
-body {
-    
+html, body, #root {
+    margin: 0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; 
 }
 
 @media only screen 
@@ -12,10 +14,130 @@ and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){  
     
     .app-container {
+        
+        //Blue background with Orange, 1st box
+        .app-menu-container {
+            
+            .app-menu-img-box {
+                width: 100%;
+                height: 100%;
 
-        .app-menu {
-            color: red;
-            background: hsl(168, 34%, 41%);
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        //Yellow Egg, 2nd Box
+        .app-egg-container {
+            .app-egg-img-box {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        //Two Cherries, 6th box
+        .app-cherries-container {
+            .app-cherries-img-box {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        //An Orange, 7th box
+        .app-orange-container {
+            .app-orange-img-box {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        //FourSquare Images, 9th box
+        .app-four-square-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-gap: 0px;
+
+            .app-four-square-bottles {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .app-four-square-orange {
+                grid-column: 2/3;
+                grid-row: 1/2;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .app-four-square-cone {
+                grid-column: 1/2;
+                grid-row: 2/3;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .app-four-square-sugarcube {
+                grid-column: 2/3;
+                grid-row: 2/3;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+        .app-footer-container {
+            display: flex;
+            flex-flow: column;
+
+            h1 {
+
+            }
+            
+            .app-footer {
+                display:flex;
+                flex-flow: row;
+            }
+
+            .app-footer-social {
+                display:flex;
+                flex-flow: row;
+            }
         }
     }
 }
