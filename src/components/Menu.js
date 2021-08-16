@@ -9,7 +9,12 @@ function Menu() {
             </div>
 
             <div className={"app-menu"}>
+                <h3>sunnyside</h3>
+                <div>sym</div>
+            </div>
 
+            <div className={"app-menu-header"}>
+                <h1>We Are Creatives</h1>
             </div>
         </div>
     )

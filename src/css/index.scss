@@ -17,34 +17,72 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         
         //Blue background with Orange, 1st box
         .app-menu-container {
-            
+            display: flex;
+            flex-flow: column;
+            display: relative;
+
             .app-menu-img-box {
-                width: 100%;
+                display: flex;
+                flex-flow: column;
                 height: 100%;
+                width: 100%;
 
                 img {
                     height: 100%;
                     width: 100%;
                 }
             }
+
+            .app-menu {
+
+            }
+
+            .app-menu-header {
+
+            }
         }
 
         //Yellow Egg, 2nd Box
         .app-egg-container {
+            
             .app-egg-img-box {
+                display: flex;
+                flex-flow: column;
                 width: 100%;
                 height: 100%;
-
+                
                 img {
                     height: 100%;
                     width: 100%;
+                    
+                }
+            }
+        }
+
+        //Pink Cup, 4th box
+        .app-pink-cup-container {
+            
+            .app-pink-cup-img-box {
+                display: flex;
+                flex-flow: column;
+                width: 100%;
+                height: 100%;
+                
+                img {
+                    height: 100%;
+                    width: 100%;
+                    
                 }
             }
         }
 
         //Two Cherries, 6th box
         .app-cherries-container {
+
             .app-cherries-img-box {
+                display: flex;
+                flex-flow: column;
+
                 width: 100%;
                 height: 100%;
 
@@ -58,6 +96,8 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         //An Orange, 7th box
         .app-orange-container {
             .app-orange-img-box {
+                display: flex;
+                flex-flow: column;
                 width: 100%;
                 height: 100%;
 

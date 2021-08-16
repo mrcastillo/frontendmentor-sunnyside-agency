@@ -7,25 +7,45 @@ html, body, #root {
   overflow-x: hidden; }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
-  .app-container .app-menu-container .app-menu-img-box {
-    width: 100%;
-    height: 100%; }
-    .app-container .app-menu-container .app-menu-img-box img {
+  .app-container .app-menu-container {
+    display: flex;
+    flex-flow: column;
+    display: relative; }
+    .app-container .app-menu-container .app-menu-img-box {
+      display: flex;
+      flex-flow: column;
       height: 100%;
       width: 100%; }
+      .app-container .app-menu-container .app-menu-img-box img {
+        height: 100%;
+        width: 100%; }
   .app-container .app-egg-container .app-egg-img-box {
+    display: flex;
+    flex-flow: column;
     width: 100%;
     height: 100%; }
     .app-container .app-egg-container .app-egg-img-box img {
       height: 100%;
       width: 100%; }
+  .app-container .app-pink-cup-container .app-pink-cup-img-box {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%; }
+    .app-container .app-pink-cup-container .app-pink-cup-img-box img {
+      height: 100%;
+      width: 100%; }
   .app-container .app-cherries-container .app-cherries-img-box {
+    display: flex;
+    flex-flow: column;
     width: 100%;
     height: 100%; }
     .app-container .app-cherries-container .app-cherries-img-box img {
       height: 100%;
       width: 100%; }
   .app-container .app-orange-container .app-orange-img-box {
+    display: flex;
+    flex-flow: column;
     width: 100%;
     height: 100%; }
     .app-container .app-orange-container .app-orange-img-box img {

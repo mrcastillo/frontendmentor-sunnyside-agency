@@ -2,8 +2,8 @@ import pinkCup from "../images/mobile/image-stand-out.jpg";
 
 function PinkCup() {
     return (
-        <div className={"app-egg-container"}>
-            <div className={"app-egg-img-box"}>
+        <div className={"app-pink-cup-container"}>
+            <div className={"app-pink-cup-img-box"}>
                 <img src={pinkCup} />
             </div>
         </div>
