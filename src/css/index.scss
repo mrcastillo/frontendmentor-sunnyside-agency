@@ -1,11 +1,15 @@
 @import "./reset.css";
+@import "https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap";
 
 html, body, #root {
     margin: 0;
     padding:0;
     height: 100%;
     width: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    //font-family: 'Fraunces', serif;
+    //font-family: 'Barlow', sans-serif;
 }
 
 @media only screen 
@@ -17,15 +21,22 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         
         //Blue background with Orange, 1st box
         .app-menu-container {
-            display: flex;
-            flex-flow: column;
-            display: relative;
+            //display: flex;
+            //flex-flow: column;
+            //display: relative;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: repeat(10, 10%);
+            color: white;
+            font-family: 'Fraunces', serif;
 
             .app-menu-img-box {
-                display: flex;
-                flex-flow: column;
-                height: 100%;
-                width: 100%;
+                grid-column: 1/11;
+                grid-row: 1/11;
+                //display: flex;
+                //flex-flow: column;
+                //height: 100%;
+                //width: 100%;
 
                 img {
                     height: 100%;
@@ -34,11 +45,47 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             }
 
             .app-menu {
+                grid-column: 1/11;
+                grid-row: 1/3;
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                margin-bottom: 2em;
+                padding: 0em 1em;
 
+                * {
+                    flex: 1;
+                }
+
+                h3 {
+                    font-size: 24px;
+                }
+
+                div {
+                    text-align: right;
+                }
             }
 
             .app-menu-header {
+                grid-column: 1/11;
+                grid-row: 3/6;
+                display: flex;
+                flex-flow: row;
+                align-items: center;
 
+                h1 {
+                    text-align: center;
+                    font-size: 42px;
+                    font-weight: 700;
+                    letter-spacing: 6px;
+                }
+            }
+
+            .app-menu-arrow {
+                grid-column: 1/11;
+                grid-row: 6/8;
+                text-align: center;
+                margin-top: 20px;
             }
         }
 
@@ -59,6 +106,68 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             }
         }
 
+
+        //learn More, 3rd Box && 6th Box
+        .app-learn-box {
+            display: flex;
+            flex-flow: column;
+            text-align: center;
+            font-family: 'Fraunces', serif;
+            
+            padding: 4em 1.5em;
+
+            h1 {
+                font-size: 32px;
+                font-weight: 800;
+                margin-bottom: 1em;
+                color: hsl(212, 27%, 19%);
+            }
+
+            p {
+                margin-bottom: 2em;
+                line-height: 1.5em;
+                color: hsl(213, 9%, 39%);
+                font-weight: 600;
+                font-family: 'Barlow', sans-serif;
+                font-size: 18px;
+            }
+
+            div {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                span {
+                    font-weight: 800;
+                    z-index: 3;
+                }
+
+                hr {
+                    position: absolute;
+                    height: 10px;
+                    border: 0;
+                    width: 38%;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    top: 12px;
+                    z-index: 2;
+                    border-radius: 4px;
+                }
+
+                #hr-yellow {
+                    background: rgba(255, 255, 0, .4);
+                }
+
+                #hr-pink {
+                    background: rgba(255, 192, 203, .4);
+                }
+            }
+        }
+
+
         //Pink Cup, 4th box
         .app-pink-cup-container {
             
@@ -76,34 +185,89 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             }
         }
 
-        //Two Cherries, 6th box
+        //6th Box is also Learn More box (3rd box)
+
+        //Two Cherries, 7th box
         .app-cherries-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: repeat(10, 10%);
 
             .app-cherries-img-box {
+                grid-column: 1/11;
+                grid-row: 1/11;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+            }
+
+            .app-cherries-text-box {
+                grid-column:1/11;
+                grid-row: 8/11;
+
                 display: flex;
                 flex-flow: column;
+                text-align: center;
 
-                width: 100%;
-                height: 100%;
+                h1 {
+                    font-size: 26px;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 800;
+                    color: hsl(167, 40%, 24%);
+                    margin-bottom: 1em;
+                }
+
+                p {
+                    color: hsl(167, 40%, 24%);
+                    font-weight: 600;
+                    font-family: 'Barlow', sans-serif;
+                    padding: 0em 1em;
+                    line-height: 1.5em;
+                }
+            }
+        }
+
+        //An Orange, 8th box
+        .app-orange-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: repeat(10, 10%);
+
+            .app-orange-img-box {
+                grid-column: 1/11;
+                grid-row: 1/11;
 
                 img {
                     height: 100%;
                     width: 100%;
                 }
             }
-        }
 
-        //An Orange, 7th box
-        .app-orange-container {
-            .app-orange-img-box {
+            .app-orange-text-box {
+                grid-column:1/11;
+                grid-row: 8/11;
+
                 display: flex;
                 flex-flow: column;
-                width: 100%;
-                height: 100%;
+                text-align: center;
 
-                img {
-                    height: 100%;
-                    width: 100%;
+                h1 {
+                    font-size: 26px;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 800;
+                    color: hsl(167, 40%, 24%);
+                    margin-bottom: 1em;
+                }
+
+                p {
+                    color: hsl(167, 40%, 24%);
+                    font-weight: 600;
+                    font-family: 'Barlow', sans-serif;
+                    padding: 0em 1em;
+                    line-height: 1.5em;
                 }
             }
         }
