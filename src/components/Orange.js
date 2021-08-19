@@ -8,10 +8,9 @@ function Orange() {
             </div>
 
             <div className={"app-orange-text-box"}>
-                <h1>Graphics Design</h1>
-                <p>Great design makes you memorable. We deliver
-                    artwork that underscores your brands message
-                    and captures potential clients' attention.
+                <h1>Photography</h1>
+                <p>Increase your credibility by getting the most stunning, high-quality photos
+                    that improve your business image.
                 </p>
             </div>
         </div>

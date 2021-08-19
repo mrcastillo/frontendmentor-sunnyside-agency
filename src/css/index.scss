@@ -30,6 +30,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             color: white;
             font-family: 'Fraunces', serif;
 
+
             .app-menu-img-box {
                 grid-column: 1/11;
                 grid-row: 1/11;
@@ -52,6 +53,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 align-items: center;
                 margin-bottom: 2em;
                 padding: 0em 1em;
+                position: relative;
 
                 * {
                     flex: 1;
@@ -63,6 +65,59 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
                 div {
                     text-align: right;
+                }
+
+                .app-menu-dropdown {
+                    position: absolute;
+                    top: 100px;
+                    left: 0;
+                    right: 0px;
+                    margin-left: auto; 
+                    margin-right: auto; 
+                    width: 90%;
+                    background: white;
+                    color: hsl(210, 4%, 67%);
+                    z-index: 100;
+                    font-family: 'Barlow', sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding: 2em 0em;
+
+                    .app-menu-dropdown-options {
+                        text-align: center;
+                        background: white;
+                        
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            padding: 1.2em 0em;
+                            width: 150px;
+                        }
+
+                        #dropdown-active {
+                            background: hsl(51, 100%, 49%);
+                            border-radius: 50px;
+                            color: black;
+                            font-family: 'Fraunces', serif;
+                            text-transform: uppercase;
+                            margin: 1em 0em 0em 0em;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .app-menu-dropdown:after {
+                    content: " ";
+                    position: absolute;
+                    right: 0px;
+                    top: -25px;
+                    border-top: none;
+                    border-right: 0px solid transparent;
+                    border-left: 25px solid transparent;
+                    border-bottom: 25px solid white;
                 }
             }
 
@@ -235,7 +290,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             display: grid;
             grid-template-columns: 25% 25% 25% 25%;
             grid-template-rows: repeat(10, 10%);
-
+            
             .app-orange-img-box {
                 grid-column: 1/11;
                 grid-row: 1/11;
@@ -257,14 +312,14 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 h1 {
                     font-size: 26px;
                     font-family: 'Fraunces', serif;
-                    font-weight: 800;
-                    color: hsl(167, 40%, 24%);
+                    font-weight: 900;
+                    color: hsl(198, 62%, 26%);
                     margin-bottom: 1em;
                 }
 
                 p {
-                    color: hsl(167, 40%, 24%);
-                    font-weight: 600;
+                    color: hsl(198, 62%, 26%);
+                    font-weight: 700;
                     font-family: 'Barlow', sans-serif;
                     padding: 0em 1em;
                     line-height: 1.5em;
@@ -272,17 +327,82 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             }
         }
 
-        //FourSquare Images, 9th box
+        //Testimonials Box, 9th box
+        .app-testimonials-box {
+            display: flex;
+            flex-flow: column;
+
+            text-align: center;
+
+            h6 {
+                margin: 3em 0em;
+                color: hsl(210, 4%, 67%);
+                font-family: 'Fraunces', serif;
+                //font-size: 18px;
+                letter-spacing: 3px;
+                font-weight: 800;
+            }
+
+            .app-testimonials-client-box {
+                display: flex;
+                flex-flow: column;
+                margin-bottom: 4em;
+
+                .app-testimonials-client-img-box {
+
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        border-radius: 100px;
+                        width: 75px;
+                        height: 75px;
+                    }
+                }
+
+                .app-testimonials-client-text {
+                    margin: 2em;
+                    font-size: 18px;
+                    line-height: 1.5em;
+                    font-family: 'Barlow', sans-serif;
+                    font-weight: 600;
+                    color: hsl(213, 9%, 39%);
+                }
+
+                .app-testimonials-client-info {
+
+
+                    #client-name {
+                        font-family: 'Fraunces', serif;
+                        color: hsl(212, 27%, 19%);
+                        font-weight: 900;
+                        margin-bottom: .5em;
+                    }
+
+                    #client-occupation {
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: hsl(210, 4%, 67%);
+                    }
+                }
+            }
+        }
+
+
+        //FourSquare Images, 10th box
         .app-four-square-container {
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 50% 50%;
-            grid-gap: 0px;
+            grid-gap: 0px!important;
 
             .app-four-square-bottles {
                 grid-column: 1/2;
                 grid-row: 1/2;
-                
+                width: 100%;
+                height: 100%;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -293,6 +413,8 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             .app-four-square-orange {
                 grid-column: 2/3;
                 grid-row: 1/2;
+                width: 100%;
+                height: 100%;
 
                 img {
                     width: 100%;
@@ -304,7 +426,9 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             .app-four-square-cone {
                 grid-column: 1/2;
                 grid-row: 2/3;
-
+                width: 100%;
+                height: 100%;
+                
                 img {
                     width: 100%;
                     height: 100%;
@@ -315,7 +439,9 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             .app-four-square-sugarcube {
                 grid-column: 2/3;
                 grid-row: 2/3;
-
+                width: 100%;
+                height: 100%;
+                
                 img {
                     width: 100%;
                     height: 100%;
@@ -328,19 +454,36 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         .app-footer-container {
             display: flex;
             flex-flow: column;
+            background: rgba(143, 211, 196, 1);
+            color: hsl(168, 34%, 41%);
+            text-align: center;
+            font-family: 'Barlow', sans-serif;
 
             h1 {
-
+                font-size: 32px;
+                font-weight: 900;
+                margin: 1.5em;
+                color: rgb(43, 116, 99);
             }
             
             .app-footer {
                 display:flex;
                 flex-flow: row;
+                justify-content: space-around;
+                font-weight: 800;
+                margin-bottom: 5em;
+                font-size: 18px;
             }
 
             .app-footer-social {
                 display:flex;
                 flex-flow: row;
+                justify-content: center;
+                margin-bottom: 5em;
+                text-align: center;
+                * {
+                    margin: 0em .5em;
+                }
             }
         }
     }
