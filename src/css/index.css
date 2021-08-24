@@ -8,6 +8,22 @@ html, body, #root {
   width: 100%;
   overflow-x: hidden; }
 
+.app-container .app-menu-container {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%); }
+  .app-container .app-menu-container .app-menu-img-box {
+    grid-column: 1/11;
+    grid-row: 1/11;
+    background: url("../images/desktop/image-header.jpg");
+    background-size: cover;
+    /*
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            */ }
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
   .app-container .app-menu-container {
     display: grid;
@@ -17,10 +33,18 @@ html, body, #root {
     font-family: 'Fraunces', serif; }
     .app-container .app-menu-container .app-menu-img-box {
       grid-column: 1/11;
-      grid-row: 1/11; }
-      .app-container .app-menu-container .app-menu-img-box img {
-        height: 100%;
-        width: 100%; }
+      grid-row: 1/11;
+      background: url("../images/mobile/image-header.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      /*
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+                */ }
     .app-container .app-menu-container .app-menu {
       grid-column: 1/11;
       grid-row: 1/3;

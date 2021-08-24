@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 import imageHeader from "../images/mobile/image-header.jpg";
+import imageHeaderDesktop from "../images/desktop/image-header.jpg";
 import arrowDown from "../images/icon-arrow-down.svg";
 import _ from "lodash";
 
 function Menu() {
     const [dropdown, setVisible] = useState({ visibility:"hidden", display: "none"});
     const [dropdownActiveStyle, setStyle] = useState(0);
-
     const menuPopup = (event) => {
         if(dropdown.visibility === "hidden" && dropdown.display === "none")
         {
@@ -38,7 +38,8 @@ function Menu() {
         <div className={"app-menu-container"}>
             
             <div className={"app-menu-img-box"}>
-                <img src={imageHeader} />
+                {/* <img src={imageHeader} /> */}
+                
             </div>
 
             <div className={"app-menu"}>
