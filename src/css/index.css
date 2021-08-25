@@ -74,41 +74,33 @@ html, body, #root {
       flex-flow: column;
       justify-content: center;
       font-family: 'Fraunces', serif; }
-      .app-container .app-egg-learn-more-combo .app-learn-box h1 {
-        font-size: 32px;
-        font-weight: 800;
-        margin-bottom: 1em;
-        color: #23303e; }
-      .app-container .app-egg-learn-more-combo .app-learn-box p {
-        margin-bottom: 2em;
-        line-height: 1.5em;
-        color: #5a636c;
-        font-weight: 600;
-        font-family: 'Barlow', sans-serif;
-        font-size: 18px; }
-      .app-container .app-egg-learn-more-combo .app-learn-box div {
+      .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper {
         display: flex;
         flex-flow: column;
-        justify-content: center;
-        position: relative; }
-        .app-container .app-egg-learn-more-combo .app-learn-box div span {
+        padding: 6em; }
+        .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper h1 {
+          font-size: 32px;
           font-weight: 800;
-          z-index: 3; }
-        .app-container .app-egg-learn-more-combo .app-learn-box div hr {
-          position: absolute;
-          height: 10px;
-          border: 0;
-          width: 38%;
-          margin: 0;
-          padding: 0;
-          text-align: center;
-          top: 12px;
-          z-index: 2;
-          border-radius: 4px; }
-        .app-container .app-egg-learn-more-combo .app-learn-box div #hr-yellow {
-          background: rgba(255, 255, 0, 0.4); }
-        .app-container .app-egg-learn-more-combo .app-learn-box div #hr-pink {
-          background: rgba(255, 192, 203, 0.4); } }
+          margin-bottom: 1em;
+          color: #23303e; }
+        .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper p {
+          margin-bottom: 2em;
+          line-height: 1.5em;
+          color: #5a636c;
+          font-weight: 600;
+          font-family: 'Barlow', sans-serif;
+          font-size: 18px; }
+        .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div {
+          display: inline-block; }
+          .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div span {
+            font-weight: 800;
+            z-index: 3; }
+          .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div hr {
+            max-width: 40%; }
+          .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div #hr-yellow {
+            background: rgba(255, 255, 0, 0.4); }
+          .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div #hr-pink {
+            background: rgba(255, 192, 203, 0.4); } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
   .app-container .app-menu-container {
@@ -219,28 +211,28 @@ html, body, #root {
     text-align: center;
     font-family: 'Fraunces', serif;
     padding: 4em 1.5em; }
-    .app-container .app-learn-box h1 {
+    .app-container .app-learn-box .app-learn-box-wrapper h1 {
       font-size: 32px;
       font-weight: 800;
       margin-bottom: 1em;
       color: #23303e; }
-    .app-container .app-learn-box p {
+    .app-container .app-learn-box .app-learn-box-wrapper p {
       margin-bottom: 2em;
       line-height: 1.5em;
       color: #5a636c;
       font-weight: 600;
       font-family: 'Barlow', sans-serif;
       font-size: 18px; }
-    .app-container .app-learn-box div {
+    .app-container .app-learn-box .app-learn-box-wrapper div {
       display: flex;
       flex-flow: column;
       justify-content: center;
       align-items: center;
       position: relative; }
-      .app-container .app-learn-box div span {
+      .app-container .app-learn-box .app-learn-box-wrapper div span {
         font-weight: 800;
         z-index: 3; }
-      .app-container .app-learn-box div hr {
+      .app-container .app-learn-box .app-learn-box-wrapper div hr {
         position: absolute;
         height: 10px;
         border: 0;
@@ -251,9 +243,9 @@ html, body, #root {
         top: 12px;
         z-index: 2;
         border-radius: 4px; }
-      .app-container .app-learn-box div #hr-yellow {
+      .app-container .app-learn-box .app-learn-box-wrapper div #hr-yellow {
         background: rgba(255, 255, 0, 0.4); }
-      .app-container .app-learn-box div #hr-pink {
+      .app-container .app-learn-box .app-learn-box-wrapper div #hr-pink {
         background: rgba(255, 192, 203, 0.4); }
   .app-container .app-pink-cup-container .app-pink-cup-img-box {
     display: flex;
