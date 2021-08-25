@@ -8,21 +8,107 @@ html, body, #root {
   width: 100%;
   overflow-x: hidden; }
 
-.app-container .app-menu-container {
-  display: grid;
-  grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(10, 10%); }
-  .app-container .app-menu-container .app-menu-img-box {
-    grid-column: 1/11;
-    grid-row: 1/11;
-    background: url("../images/desktop/image-header.jpg");
-    background-size: cover;
-    /*
-            img {
-                height: 100%;
-                width: 100%;
-            }
-            */ }
+@media only screen and (min-device-width: 667px) {
+  .app-container .app-menu-container {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    color: white; }
+    .app-container .app-menu-container .app-menu-img-box {
+      grid-column: 1/11;
+      grid-row: 1/11; }
+      .app-container .app-menu-container .app-menu-img-box img {
+        height: 100%;
+        width: 100%; }
+    .app-container .app-menu-container .app-menu {
+      grid-column: 1/11;
+      grid-row: 1/2;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      font-family: 'Barlow', sans-serif; }
+      .app-container .app-menu-container .app-menu h3 {
+        margin-left: 2em;
+        flex: 1; }
+      .app-container .app-menu-container .app-menu .app-menu-desktop {
+        flex: 1;
+        display: flex;
+        flex-flow: row; }
+        .app-container .app-menu-container .app-menu .app-menu-desktop .app-menu-desktop-buttons {
+          display: flex;
+          flex-flow: row;
+          width: 100%;
+          justify-content: space-evenly; }
+      .app-container .app-menu-container .app-menu .app-menu-sandwich {
+        visibility: hidden;
+        display: none; }
+    .app-container .app-menu-container .app-menu-header {
+      grid-column: 1/11;
+      grid-row: 3/6; }
+      .app-container .app-menu-container .app-menu-header h1 {
+        text-align: center;
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        font-family: 'Fraunces', serif; }
+    .app-container .app-menu-container .app-menu-arrow {
+      grid-column: 1/11;
+      grid-row: 5/7;
+      text-align: center; }
+  .app-container .app-egg-learn-more-combo {
+    display: flex;
+    flex-flow: row-reverse; }
+    .app-container .app-egg-learn-more-combo .app-egg-container {
+      flex: 1; }
+      .app-container .app-egg-learn-more-combo .app-egg-container .app-egg-img-box {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        height: 100%; }
+        .app-container .app-egg-learn-more-combo .app-egg-container .app-egg-img-box img {
+          height: 100%;
+          width: 100%; }
+    .app-container .app-egg-learn-more-combo .app-learn-box {
+      flex: 1;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      font-family: 'Fraunces', serif; }
+      .app-container .app-egg-learn-more-combo .app-learn-box h1 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 1em;
+        color: #23303e; }
+      .app-container .app-egg-learn-more-combo .app-learn-box p {
+        margin-bottom: 2em;
+        line-height: 1.5em;
+        color: #5a636c;
+        font-weight: 600;
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px; }
+      .app-container .app-egg-learn-more-combo .app-learn-box div {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        position: relative; }
+        .app-container .app-egg-learn-more-combo .app-learn-box div span {
+          font-weight: 800;
+          z-index: 3; }
+        .app-container .app-egg-learn-more-combo .app-learn-box div hr {
+          position: absolute;
+          height: 10px;
+          border: 0;
+          width: 38%;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          top: 12px;
+          z-index: 2;
+          border-radius: 4px; }
+        .app-container .app-egg-learn-more-combo .app-learn-box div #hr-yellow {
+          background: rgba(255, 255, 0, 0.4); }
+        .app-container .app-egg-learn-more-combo .app-learn-box div #hr-pink {
+          background: rgba(255, 192, 203, 0.4); } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
   .app-container .app-menu-container {
@@ -33,18 +119,10 @@ html, body, #root {
     font-family: 'Fraunces', serif; }
     .app-container .app-menu-container .app-menu-img-box {
       grid-column: 1/11;
-      grid-row: 1/11;
-      background: url("../images/mobile/image-header.jpg") no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      /*
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-                */ }
+      grid-row: 1/11; }
+      .app-container .app-menu-container .app-menu-img-box img {
+        height: 100%;
+        width: 100%; }
     .app-container .app-menu-container .app-menu {
       grid-column: 1/11;
       grid-row: 1/3;
@@ -57,9 +135,16 @@ html, body, #root {
       .app-container .app-menu-container .app-menu * {
         flex: 1; }
       .app-container .app-menu-container .app-menu h3 {
-        font-size: 24px; }
+        font-size: 24px;
+        margin: 0; }
       .app-container .app-menu-container .app-menu div {
         text-align: right; }
+      .app-container .app-menu-container .app-menu .app-menu-desktop {
+        display: none;
+        visibility: hidden; }
+      .app-container .app-menu-container .app-menu .app-menu-sandwich {
+        visibility: initial;
+        display: initial; }
       .app-container .app-menu-container .app-menu .app-menu-dropdown {
         position: absolute;
         top: 100px;
@@ -118,6 +203,8 @@ html, body, #root {
       grid-row: 6/8;
       text-align: center;
       margin-top: 20px; }
+  .app-container .app-egg-learn-more-combo {
+    display: inline; }
   .app-container .app-egg-container .app-egg-img-box {
     display: flex;
     flex-flow: column;

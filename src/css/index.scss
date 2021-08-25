@@ -12,44 +12,173 @@ html, body, #root {
     //font-family: 'Barlow', sans-serif;
 }
 
-.app-container {
+@media only screen and (min-device-width : 667px){
+    .app-container {
 
-    .app-menu-container {
-        display: grid;
-        grid-template-columns: repeat(10, 10%);
-        grid-template-rows: repeat(10, 10%);
+        .app-menu-container {
+            display: grid;
+            grid-template-columns: repeat(10, 10%);
+            grid-template-rows: repeat(10, 10%);
+            color: white;
 
-        .app-menu-img-box {
-            grid-column: 1/11;
-            grid-row: 1/11;
-            background: url("../images/desktop/image-header.jpg");
-            background-size: cover;
+            .app-menu-img-box {
+                grid-column: 1/11;
+                grid-row: 1/11;
 
-            /*
-            img {
-                height: 100%;
-                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
             }
-            */
+
+            .app-menu {
+                grid-column: 1/11;
+                grid-row: 1/2;
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                font-family: 'Barlow', sans-serif;
+
+                h3 { 
+                    margin-left: 2em;
+                    flex: 1;
+                }
+
+                .app-menu-desktop {
+                    flex: 1;
+                    display: flex;
+                    flex-flow: row;
+                    
+                    
+                    .app-menu-desktop-buttons {
+                        display: flex;
+                        flex-flow: row;
+                        width: 100%;
+                        justify-content: space-evenly;
+                        
+                    }
+                }
+                
+                .app-menu-sandwich {
+                    visibility: hidden;
+                    display: none;
+                }
+
+                .app-menu-dropdown {
+
+
+                    .app-menu-dropdown-options {
+                        
+
+                        p {
+                            
+                        }
+                    }
+                }
+            }
+
+            .app-menu-header {
+                grid-column: 1/11;
+                grid-row: 3/6;
+
+                h1 {
+                    text-align: center;
+                    font-size: 42px;
+                    font-weight: 700;
+                    letter-spacing: 6px;
+                    font-family: 'Fraunces', serif;
+                }
+            }
+
+            .app-menu-arrow {
+                grid-column: 1/11;
+                grid-row: 5/7;
+                text-align: center;
+            }
         }
 
-        .app-menu {
 
-            .app-menu-dropdown {
+        .app-egg-learn-more-combo {
+            display: flex;
+            flex-flow: row-reverse;
 
+            .app-egg-container {
+                flex: 1;
 
-                .app-menu-dropdown-options {
+                .app-egg-img-box {
+                    display: flex;
+                    flex-flow: column;
+                    width: 100%;
+                    height: 100%;
                     
-
-                    p {
+                    img {
+                        height: 100%;
+                        width: 100%;
                         
+                    }
+                }
+            }
+
+            .app-learn-box {
+                flex: 1;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                font-family: 'Fraunces', serif;
+                
+                h1 {
+                    font-size: 32px;
+                    font-weight: 800;
+                    margin-bottom: 1em;
+                    color: hsl(212, 27%, 19%);
+                }
+
+                p {
+                    margin-bottom: 2em;
+                    line-height: 1.5em;
+                    color: hsl(213, 9%, 39%);
+                    font-weight: 600;
+                    font-family: 'Barlow', sans-serif;
+                    font-size: 18px;
+                    
+                }
+
+                div {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    position: relative;
+    
+                    span {
+                        font-weight: 800;
+                        z-index: 3;
+                    }
+    
+                    hr {
+                        position: absolute;
+                        height: 10px;
+                        border: 0;
+                        width: 38%;
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                        top: 12px;
+                        z-index: 2;
+                        border-radius: 4px;
+                    }
+    
+                    #hr-yellow {
+                        background: rgba(255, 255, 0, .4);
+                    }
+    
+                    #hr-pink {
+                        background: rgba(255, 192, 203, .4);
                     }
                 }
             }
         }
     }
 }
-
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px)
@@ -72,22 +201,15 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             .app-menu-img-box {
                 grid-column: 1/11;
                 grid-row: 1/11;
-                background: url("../images/mobile/image-header.jpg") no-repeat center center ; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
                 //display: flex;
                 //flex-flow: column;
                 //height: 100%;
                 //width: 100%;
-                
-                /*
+            
                 img {
                     height: 100%;
                     width: 100%;
                 }
-                */
                 
             }
 
@@ -107,10 +229,21 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
 
                 h3 {
                     font-size: 24px;
+                    margin: 0;
                 }
 
                 div {
                     text-align: right;
+                }
+
+                .app-menu-desktop {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                .app-menu-sandwich {
+                    visibility: initial;
+                    display: initial;
                 }
 
                 .app-menu-dropdown {
@@ -190,6 +323,9 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
             }
         }
 
+        .app-egg-learn-more-combo { 
+            display: inline;
+        }
         //Yellow Egg, 2nd Box
         .app-egg-container {
             

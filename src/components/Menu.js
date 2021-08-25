@@ -1,14 +1,27 @@
 import { useState } from "react";
 
-import imageHeader from "../images/mobile/image-header.jpg";
-import imageHeaderDesktop from "../images/desktop/image-header.jpg";
-import arrowDown from "../images/icon-arrow-down.svg";
+import imageHeader from "../images/desktop/image-header.jpg";
+import imageHeaderMobile from "../images/mobile/image-header.jpg";
 import _ from "lodash";
 
 function Menu() {
     const [dropdown, setVisible] = useState({ visibility:"hidden", display: "none"});
     const [dropdownActiveStyle, setStyle] = useState(0);
-    const menuPopup = (event) => {
+
+    var mediaTag = window.matchMedia('(max-device-width : 667px)')
+
+    const [menuImage, setMenuImage] = useState(
+        () => {
+            return(mediaTag.matches ? imageHeaderMobile : imageHeader);
+        }
+    );
+
+    mediaTag.addEventListener("change", () => {
+        var currentImage = mediaTag.matches ? imageHeaderMobile : imageHeader
+        setMenuImage(currentImage);
+    });
+
+    const menuPopUpMobile = (event) => {
         if(dropdown.visibility === "hidden" && dropdown.display === "none")
         {
             setVisible({
@@ -32,21 +45,33 @@ function Menu() {
          });
 
          event.target.id = "dropdown-active";
-    }
+    };
 
     return (
         <div className={"app-menu-container"}>
             
             <div className={"app-menu-img-box"}>
-                {/* <img src={imageHeader} /> */}
-                
+                <img src={menuImage} /> 
             </div>
 
             <div className={"app-menu"}>
                 <h3>sunnyside</h3>
-                <div onClick={menuPopup}>
+
+                {/*For Desktop Only*/}
+                <div className={"app-menu-desktop"}>
+                    <div className={"app-menu-desktop-buttons"}>
+                        <p>About</p>
+                        <p>Services</p>
+                        <p>Projects</p>
+                        <p>Contact</p>
+                    </div>
+                </div>
+
+                {/*For Mobile Only*/}
+                <div className={"app-menu-sandwich"} onClick={menuPopUpMobile}>
                     <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fillRule="evenodd"/></svg>
                 </div>
+
                 <div className={"app-menu-dropdown"} style={{"visibility": dropdown.visibility, "display": dropdown.display}}>
                     <div onClick={setActiveStyle} className={"app-menu-dropdown-options"}>
                         <p>About</p>
@@ -55,6 +80,7 @@ function Menu() {
                         <p>Contact</p>
                     </div>
                 </div>
+
             </div>
 
             <div className={"app-menu-header"}>

@@ -16,9 +16,12 @@ function App() {
     <div className="app-container">
       <Menu />
 
-      <Egg />
+      <div className={"app-egg-learn-more-combo"}>
+        <Egg />
 
-      <LearnMoreBoxOne />
+        <LearnMoreBoxOne />
+      </div>
+      
 
       <PinkCup />
 
