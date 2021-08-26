@@ -22,14 +22,18 @@ function App() {
         <LearnMoreBoxOne />
       </div>
       
+      <div className={"app-cup-learn-more-combo"}>
+        <PinkCup />
 
-      <PinkCup />
+        <LearnMoreBoxTwo />
+      </div>
+      
+      <div className={"app-cherries-orange-combo"}>
+        <Cherries />
 
-      <LearnMoreBoxTwo />
-
-      <Cherries />
-
-      <Orange />
+        <Orange />
+      </div>
+      
 
       <Testimonials />
 
