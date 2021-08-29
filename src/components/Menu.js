@@ -4,6 +4,9 @@ import imageHeader from "../images/desktop/image-header.jpg";
 import imageHeaderMobile from "../images/mobile/image-header.jpg";
 import _ from "lodash";
 
+import arrowDown from "../images/icon-arrow-down.svg";
+
+
 function Menu() {
     const [dropdown, setVisible] = useState({ visibility:"hidden", display: "none"});
     const [dropdownActiveStyle, setStyle] = useState(0);
@@ -51,7 +54,7 @@ function Menu() {
         <div className={"app-menu-container"}>
             
             <div className={"app-menu-img-box"}>
-                <img src={menuImage} /> 
+                <img src={imageHeader} /> 
             </div>
 
             <div className={"app-menu"}>
@@ -89,7 +92,7 @@ function Menu() {
 
             <div className={"app-menu-arrow"}>
                 {/* <img src={arrowDown} /> */}
-                <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" strokeWidth="6" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
+                <img src={arrowDown} />
             </div>
         </div>
     )

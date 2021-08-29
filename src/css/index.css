@@ -25,11 +25,12 @@ html, body, #root {
       grid-row: 1/2;
       display: flex;
       flex-flow: row;
-      align-items: center;
-      font-family: 'Barlow', sans-serif; }
+      font-family: 'Barlow', sans-serif;
+      margin: 2.5em; }
       .app-container .app-menu-container .app-menu h3 {
-        margin-left: 2em;
-        flex: 1; }
+        margin-left: 1em;
+        flex: 1;
+        font-size: 32px; }
       .app-container .app-menu-container .app-menu .app-menu-desktop {
         flex: 1;
         display: flex;
@@ -38,23 +39,37 @@ html, body, #root {
           display: flex;
           flex-flow: row;
           width: 100%;
-          justify-content: space-evenly; }
+          font-size: 18px;
+          justify-content: space-evenly;
+          font-weight: 500; }
       .app-container .app-menu-container .app-menu .app-menu-sandwich {
         visibility: hidden;
         display: none; }
     .app-container .app-menu-container .app-menu-header {
       grid-column: 1/11;
-      grid-row: 3/6; }
+      grid-row: 2/5;
+      display: flex;
+      flex-flow: row;
+      justify-content: center; }
       .app-container .app-menu-container .app-menu-header h1 {
-        text-align: center;
-        font-size: 42px;
+        font-size: 56px;
         font-weight: 700;
         letter-spacing: 6px;
-        font-family: 'Fraunces', serif; }
+        font-family: 'Fraunces', serif;
+        margin-top: 100px; }
     .app-container .app-menu-container .app-menu-arrow {
       grid-column: 1/11;
       grid-row: 5/7;
-      text-align: center; }
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+      margin-top: 50px; }
+      .app-container .app-menu-container .app-menu-arrow img {
+        width: 36px;
+        height: auto; }
   .app-container .app-egg-learn-more-combo {
     display: flex;
     flex-flow: row-reverse; }
@@ -78,7 +93,7 @@ html, body, #root {
         display: flex;
         flex-flow: column; }
         .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper h1 {
-          font-size: 32px;
+          font-size: 40px;
           font-weight: 800;
           margin-bottom: 1em;
           color: #23303e; }
@@ -88,9 +103,11 @@ html, body, #root {
           color: #5a636c;
           font-weight: 600;
           font-family: 'Barlow', sans-serif;
-          font-size: 18px; }
+          font-size: 18px;
+          font-weight: 500; }
         .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div {
-          display: inline-block; }
+          display: inline-block;
+          font-size: 15px; }
           .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div span {
             font-weight: 800;
             z-index: 3; }
@@ -121,9 +138,10 @@ html, body, #root {
       font-family: 'Fraunces', serif; }
       .app-container .app-cup-learn-more-combo .app-learn-box .app-learn-box-wrapper {
         display: flex;
-        flex-flow: column; }
+        flex-flow: column;
+        padding: 0em 1em; }
         .app-container .app-cup-learn-more-combo .app-learn-box .app-learn-box-wrapper h1 {
-          font-size: 32px;
+          font-size: 24px;
           font-weight: 800;
           margin-bottom: 1em;
           color: #23303e; }
@@ -163,17 +181,19 @@ html, body, #root {
         grid-column: 1/11;
         grid-row: 1/11; }
         .app-container .app-cherries-orange-combo .app-cherries-container .app-cherries-text-box h1 {
-          font-size: 26px;
+          font-size: 18px;
           font-family: 'Fraunces', serif;
           font-weight: 800;
           color: #25564b;
-          margin-bottom: 1em; }
+          margin-bottom: 1em;
+          text-align: center; }
         .app-container .app-cherries-orange-combo .app-cherries-container .app-cherries-text-box p {
           color: #25564b;
           font-weight: 600;
           font-family: 'Barlow', sans-serif;
           padding: 0em 1em;
-          line-height: 1.5em; }
+          line-height: 1.5em;
+          text-align: center; }
     .app-container .app-cherries-orange-combo .app-orange-container {
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
@@ -199,7 +219,73 @@ html, body, #root {
           font-weight: 700;
           font-family: 'Barlow', sans-serif;
           padding: 0em 1em;
-          line-height: 1.5em; } }
+          line-height: 1.5em; }
+  .app-container .app-testimonials-box {
+    display: flex;
+    flex-flow: column; }
+    .app-container .app-testimonials-box h3 {
+      flex: 1; }
+    .app-container .app-testimonials-box .app-testimonials-client-wrapper {
+      display: flex;
+      flex-flow: row; }
+  .app-container .app-four-square-container {
+    display: flex;
+    flex-flow: row; }
+    .app-container .app-four-square-container .app-four-square-bottles {
+      width: 100%;
+      height: 100%; }
+      .app-container .app-four-square-container .app-four-square-bottles img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .app-container .app-four-square-container .app-four-square-orange {
+      width: 100%;
+      height: 100%; }
+      .app-container .app-four-square-container .app-four-square-orange img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .app-container .app-four-square-container .app-four-square-cone {
+      width: 100%;
+      height: 100%; }
+      .app-container .app-four-square-container .app-four-square-cone img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .app-container .app-four-square-container .app-four-square-sugarcube {
+      width: 100%;
+      height: 100%; }
+      .app-container .app-four-square-container .app-four-square-sugarcube img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .app-container .app-footer-container {
+    display: flex;
+    flex-flow: column;
+    background: #8fd3c4;
+    color: #458c7e;
+    text-align: center;
+    font-family: 'Barlow', sans-serif; }
+    .app-container .app-footer-container h1 {
+      font-size: 32px;
+      font-weight: 900;
+      margin: 1.5em;
+      color: #2b7463; }
+    .app-container .app-footer-container .app-footer {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      font-weight: 800;
+      margin-bottom: 5em;
+      font-size: 18px; }
+    .app-container .app-footer-container .app-footer-social {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      margin-bottom: 5em;
+      text-align: center; }
+      .app-container .app-footer-container .app-footer-social * {
+        margin: 0em .5em; } }
 
 /*
 Mobile CSS
@@ -423,30 +509,30 @@ Mobile CSS
       font-family: 'Fraunces', serif;
       letter-spacing: 3px;
       font-weight: 800; }
-    .app-container .app-testimonials-box .app-testimonials-client-box {
+    .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box {
       display: flex;
       flex-flow: column;
       margin-bottom: 4em; }
-      .app-container .app-testimonials-box .app-testimonials-client-box .app-testimonials-client-img-box {
+      .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-img-box {
         width: 100%;
         height: 100%; }
-        .app-container .app-testimonials-box .app-testimonials-client-box .app-testimonials-client-img-box img {
+        .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-img-box img {
           border-radius: 100px;
           width: 75px;
           height: 75px; }
-      .app-container .app-testimonials-box .app-testimonials-client-box .app-testimonials-client-text {
+      .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-text {
         margin: 2em;
         font-size: 18px;
         line-height: 1.5em;
         font-family: 'Barlow', sans-serif;
         font-weight: 600;
         color: #5a636c; }
-      .app-container .app-testimonials-box .app-testimonials-client-box .app-testimonials-client-info #client-name {
+      .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-info #client-name {
         font-family: 'Fraunces', serif;
         color: #23303e;
         font-weight: 900;
         margin-bottom: .5em; }
-      .app-container .app-testimonials-box .app-testimonials-client-box .app-testimonials-client-info #client-occupation {
+      .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-info #client-occupation {
         font-family: 'Barlow', sans-serif;
         font-size: 14px;
         font-weight: 600;
