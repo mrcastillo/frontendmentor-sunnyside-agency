@@ -54,7 +54,7 @@ function Menu() {
         <div className={"app-menu-container"}>
             
             <div className={"app-menu-img-box"}>
-                <img src={imageHeader} /> 
+                <img src={menuImage} /> 
             </div>
 
             <div className={"app-menu"}>

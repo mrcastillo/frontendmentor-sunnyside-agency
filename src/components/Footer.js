@@ -5,7 +5,7 @@ function Footer() {
 
             <div className={"app-footer"}>
                 <p>About</p>
-                <p>Services</p>
+                <p id={"mid"}>Services</p>
                 <p>Projects</p>
             </div>
 

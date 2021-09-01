@@ -36,6 +36,7 @@ html, body, #root {
                 grid-row: 1/2;
                 display: flex;
                 flex-flow: row;
+                align-items: center;
                 font-family: 'Barlow', sans-serif;
                 margin: 2.5em;
 
@@ -49,7 +50,6 @@ html, body, #root {
                     flex: 1;
                     display: flex;
                     flex-flow: row;
-                    
                     
                     .app-menu-desktop-buttons {
                         display: flex;
@@ -146,10 +146,12 @@ html, body, #root {
                 flex-flow: column;
                 justify-content: center;
                 font-family: 'Fraunces', serif;
-                
+                padding: 5% 0em;
+
                 .app-learn-box-wrapper {
                     display: flex;
                     flex-flow: column;
+                    margin: 0em 20%;
 
                     h1 {
                         font-size: 40px;
@@ -169,16 +171,19 @@ html, body, #root {
                     }
     
                     div {
-                        display: inline-block;
+                        display: flex;
+                        flex-flow: column;
+                        
+                        justify-content: center;
                         font-size: 15px;
 
                         span {
                             font-weight: 800;
                             z-index: 3;
                         }
-        
+
                         hr {
-                            max-width: 40%;
+
                         }
         
                         #hr-yellow {
@@ -220,14 +225,15 @@ html, body, #root {
                 flex-flow: column;
                 justify-content: center;
                 font-family: 'Fraunces', serif;
+                padding: 5% 0%;
                 
                 .app-learn-box-wrapper {
                     display: flex;
                     flex-flow: column;
-                    padding: 0em 1em;
+                    margin: 0% 20%;
 
                     h1 {
-                        font-size: 24px;
+                        font-size: 40px;
                         font-weight: 800;   
                         margin-bottom: 1em;
                         color: hsl(212, 27%, 19%);
@@ -241,13 +247,14 @@ html, body, #root {
                         font-family: 'Barlow', sans-serif;
                         font-size: 18px;
                     }
-    
+                    
                     div {
                         display: inline-block;
         
                         span {
                             font-weight: 800;
                             z-index: 3;
+                            font-size: 15px;
                         }
         
                         hr {
@@ -289,10 +296,11 @@ html, body, #root {
 
                 .app-cherries-text-box {
                     grid-column: 1/11;
-                    grid-row: 1/11;
-    
+                    grid-row: 8/11;
+                    margin: 0% 20%;
+
                     h1 {
-                        font-size: 18px;
+                        font-size: 28px;
                         font-family: 'Fraunces', serif;
                         font-weight: 800;
                         color: hsl(167, 40%, 24%);
@@ -302,7 +310,7 @@ html, body, #root {
     
                     p {
                         color: hsl(167, 40%, 24%);
-                        font-weight: 600;
+                        font-weight: 500;
                         font-family: 'Barlow', sans-serif;
                         padding: 0em 1em;
                         line-height: 1.5em;
@@ -329,22 +337,25 @@ html, body, #root {
     
                 .app-orange-text-box {
                     grid-column: 1/11;
-                    grid-row: 1/11;
-                    
+                    grid-row: 8/11;
+                    margin: 0% 20%;
+
                     h1 {
-                        font-size: 26px;
+                        font-size: 28px;
                         font-family: 'Fraunces', serif;
                         font-weight: 900;
                         color: hsl(198, 62%, 26%);
                         margin-bottom: 1em;
+                        text-align: center;
                     }
     
                     p {
                         color: hsl(198, 62%, 26%);
-                        font-weight: 700;
+                        font-weight: 500;
                         font-family: 'Barlow', sans-serif;
                         padding: 0em 1em;
                         line-height: 1.5em;
+                        text-align: center;
                     }
                 }
             }
@@ -354,24 +365,78 @@ html, body, #root {
         .app-testimonials-box {
             display: flex;
             flex-flow: column;
+            align-items: center;
+            margin-bottom: 8em;
 
-            h3 {
+            h6 {
                 flex: 1;
+                margin: 8em 0em 5em 0em;
+                color: hsl(210, 4%, 67%);
+                font-family: 'Fraunces', serif;
+                //font-size: 18px;
+                letter-spacing: 3px;
+                font-weight: 800;
             }
 
             .app-testimonials-client-wrapper {
                 display: flex;
                 flex-flow: row;
+                margin: 0 12%;
+
+                .app-testimonials-client-box {
+                    display: flex;
+                    flex-flow: column;
+                    
+
+                    .app-testimonials-client-img-box {
+                        text-align: center; 
+                        margin-bottom: 3em;
+                        img {
+                            width: 72px;
+                            height: auto;
+                            border-radius: 50px;
+                        }
+                    }
+
+                    .app-testimonials-client-text {
+                        margin: 0 5%; 
+                        line-height: 32px;
+                        font-size: 18px;
+                        font-family: 'Barlow', sans-serif;
+                        font-weight: 500;
+                        color: #5B636D;
+                        text-align: center;
+                        margin-bottom: 3em;
+                    }
+
+                    .app-testimonials-client-info {
+                        text-align: center;
+
+                        #client-name {
+                            font-family: 'Fraunces', serif;
+                            color: hsl(212, 27%, 19%);
+                            font-weight: 900;
+                            margin-bottom: .5em;
+                        }
+
+                        #client-occupation {
+                            font-family: 'Barlow', sans-serif;
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: hsl(210, 4%, 67%);
+                        }
+                    }
+                }
             }
         }
 
         .app-four-square-container {
             display: flex;
             flex-flow: row;
+            gap: 0;
 
             .app-four-square-bottles {
-                width: 100%;
-                height: 100%;
+                
 
                 img {
                     width: 100%;
@@ -381,8 +446,7 @@ html, body, #root {
             }
 
             .app-four-square-orange {
-                width: 100%;
-                height: 100%;
+                
 
                 img {
                     width: 100%;
@@ -392,8 +456,7 @@ html, body, #root {
             }
 
             .app-four-square-cone {
-                width: 100%;
-                height: 100%;
+
                 
                 img {
                     width: 100%;
@@ -403,8 +466,7 @@ html, body, #root {
             }
 
             .app-four-square-sugarcube {
-                width: 100%;
-                height: 100%;
+                
                 
                 img {
                     width: 100%;
@@ -432,10 +494,14 @@ html, body, #root {
             .app-footer {
                 display:flex;
                 flex-flow: row;
-                justify-content: space-around;
-                font-weight: 800;
+                justify-content: center;
+                font-weight: 500;
                 margin-bottom: 5em;
                 font-size: 18px;
+
+                #mid {
+                    margin: 0em 3em;
+                }
             }
 
             .app-footer-social {
@@ -444,6 +510,7 @@ html, body, #root {
                 justify-content: center;
                 margin-bottom: 5em;
                 text-align: center;
+
                 * {
                     margin: 0em .5em;
                 }
@@ -603,6 +670,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
         .app-egg-learn-more-combo { 
             display: inline;
         }
+
         //Yellow Egg, 2nd Box
         .app-egg-container {
             
@@ -805,7 +873,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 font-weight: 800;
             }
 
-            .app-testimonials-client-wrapper { 
+            .app-testimonials-client-wrapper {
                 .app-testimonials-client-box {
                     display: flex;
                     flex-flow: column;
@@ -852,7 +920,6 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                 }
             }
         }
-
 
         //FourSquare Images, 10th box
         .app-four-square-container {

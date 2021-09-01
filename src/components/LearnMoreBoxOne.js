@@ -11,7 +11,6 @@ function LearnMoreBoxOne() {
 
                 <div>
                     <span>LEARN MORE</span>
-                    <hr id={"hr-yellow"}/>
                 </div>
             </div>
         </div>

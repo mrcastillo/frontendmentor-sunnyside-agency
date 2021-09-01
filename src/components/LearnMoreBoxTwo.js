@@ -11,7 +11,6 @@ function LearnMoreBoxTwo() {
 
                 <div>
                     <span>LEARN MORE</span>
-                    <hr id={"hr-pink"}/>
                 </div>
             </div>
         </div>
