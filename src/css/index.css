@@ -184,7 +184,7 @@ html, body, #root {
           width: 100%; }
       .app-container .app-cherries-orange-combo .app-cherries-container .app-cherries-text-box {
         grid-column: 1/11;
-        grid-row: 8/11;
+        grid-row: 8/10;
         margin: 0% 20%; }
         .app-container .app-cherries-orange-combo .app-cherries-container .app-cherries-text-box h1 {
           font-size: 28px;
@@ -213,7 +213,7 @@ html, body, #root {
           width: 100%; }
       .app-container .app-cherries-orange-combo .app-orange-container .app-orange-text-box {
         grid-column: 1/11;
-        grid-row: 8/11;
+        grid-row: 8/10;
         margin: 0% 20%; }
         .app-container .app-cherries-orange-combo .app-orange-container .app-orange-text-box h1 {
           font-size: 28px;
