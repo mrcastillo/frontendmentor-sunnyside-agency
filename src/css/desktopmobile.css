@@ -1,0 +1,356 @@
+@media only screen and (max-width: 768px) and (min-width: 376px) and (min-device-width: 375px) {
+  .app-container .app-menu-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(10, 10%);
+    color: white;
+    font-family: 'Fraunces', serif; }
+    .app-container .app-menu-container .app-menu-img-box {
+      grid-column: 1/11;
+      grid-row: 1/11; }
+      .app-container .app-menu-container .app-menu-img-box img {
+        height: 100%;
+        width: 100%; }
+    .app-container .app-menu-container .app-menu {
+      grid-column: 1/11;
+      grid-row: 2/3;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      margin-bottom: 2em;
+      padding: 0em 1em;
+      position: relative; }
+      .app-container .app-menu-container .app-menu * {
+        flex: 1; }
+      .app-container .app-menu-container .app-menu h3 {
+        font-size: 18px;
+        margin: 0; }
+      .app-container .app-menu-container .app-menu div {
+        text-align: right; }
+      .app-container .app-menu-container .app-menu .app-menu-desktop {
+        display: none;
+        visibility: hidden; }
+      .app-container .app-menu-container .app-menu .app-menu-sandwich {
+        visibility: initial;
+        display: initial; }
+      .app-container .app-menu-container .app-menu .app-menu-dropdown {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        background: white;
+        color: #a7abae;
+        z-index: 100;
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 2em 0em; }
+        .app-container .app-menu-container .app-menu .app-menu-dropdown .app-menu-dropdown-options {
+          text-align: center;
+          background: white;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center; }
+          .app-container .app-menu-container .app-menu .app-menu-dropdown .app-menu-dropdown-options p {
+            padding: 1.2em 0em;
+            width: 150px; }
+          .app-container .app-menu-container .app-menu .app-menu-dropdown .app-menu-dropdown-options #dropdown-active {
+            background: #fad400;
+            border-radius: 50px;
+            color: black;
+            font-family: 'Fraunces', serif;
+            text-transform: uppercase;
+            margin: 1em 0em 0em 0em;
+            font-size: 16px; }
+      .app-container .app-menu-container .app-menu .app-menu-dropdown:after {
+        content: " ";
+        position: absolute;
+        right: 0px;
+        top: -25px;
+        border-top: none;
+        border-right: 0px solid transparent;
+        border-left: 25px solid transparent;
+        border-bottom: 25px solid white; }
+    .app-container .app-menu-container .app-menu-header {
+      grid-column: 1/11;
+      grid-row: 3/6;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center; }
+      .app-container .app-menu-container .app-menu-header h1 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 6px; }
+    .app-container .app-menu-container .app-menu-arrow {
+      grid-column: 1/11;
+      grid-row: 5/8;
+      text-align: center;
+      margin-top: 20px; }
+      .app-container .app-menu-container .app-menu-arrow img {
+        width: 16px;
+        height: auto; }
+  .app-container .app-egg-learn-more-combo {
+    display: inline; }
+  .app-container .app-egg-container .app-egg-img-box {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%; }
+    .app-container .app-egg-container .app-egg-img-box img {
+      height: 100%;
+      width: 100%; }
+  .app-container .app-egg-learn-more-combo .app-learn-box {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    padding: 4em 1.5em; }
+    .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper {
+      padding: 0em 2em; }
+      .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper h1 {
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 1em;
+        color: #23303e; }
+      .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper p {
+        margin-bottom: 2em;
+        line-height: 1.5em;
+        color: #5a636c;
+        font-weight: 600;
+        font-family: 'Barlow', sans-serif;
+        font-size: 14px; }
+      .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div span {
+          font-weight: 800;
+          z-index: 3;
+          font-size: 12px;
+          border-bottom: 5px solid rgba(255, 255, 0, 0.4); }
+        .app-container .app-egg-learn-more-combo .app-learn-box .app-learn-box-wrapper div hr {
+          display: none;
+          visibility: hidden; }
+  .app-container .app-cup-learn-more-combo .app-learn-box {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    padding: 4em 1.5em; }
+    .app-container .app-cup-learn-more-combo .app-learn-box .app-learn-box-wrapper {
+      padding: 0em 2em; }
+      .app-container .app-cup-learn-more-combo .app-learn-box .app-learn-box-wrapper h1 {
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 1em;
+        color: #23303e; }
+      .app-container .app-cup-learn-more-combo .app-learn-box .app-learn-box-wrapper p {
+        margin-bottom: 2em;
+        line-height: 1.5em;
+        color: #5a636c;
+        font-weight: 600;
+        font-family: 'Barlow', sans-serif;
+        font-size: 14px; }
+      .app-container .app-cup-learn-more-combo .app-learn-box .app-learn-box-wrapper div {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .app-container .app-cup-learn-more-combo .app-learn-box .app-learn-box-wrapper div span {
+          font-weight: 800;
+          z-index: 3;
+          font-size: 12px;
+          border-bottom: 5px solid rgba(255, 192, 203, 0.4); }
+        .app-container .app-cup-learn-more-combo .app-learn-box .app-learn-box-wrapper div hr {
+          display: none;
+          visibility: hidden; }
+  .app-container .app-pink-cup-container .app-pink-cup-img-box {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%; }
+    .app-container .app-pink-cup-container .app-pink-cup-img-box img {
+      height: 100%;
+      width: 100%; }
+  .app-container .app-cherries-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(10, 10%); }
+    .app-container .app-cherries-container .app-cherries-img-box {
+      grid-column: 1/11;
+      grid-row: 1/11;
+      height: 100%;
+      width: 100%; }
+      .app-container .app-cherries-container .app-cherries-img-box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .app-container .app-cherries-container .app-cherries-text-box {
+      grid-column: 1/11;
+      grid-row: 8/11;
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      padding: 0em 2em; }
+      .app-container .app-cherries-container .app-cherries-text-box h1 {
+        font-size: 18px;
+        font-family: 'Fraunces', serif;
+        font-weight: 800;
+        color: #25564b;
+        margin-bottom: 1em; }
+      .app-container .app-cherries-container .app-cherries-text-box p {
+        color: #25564b;
+        font-weight: 600;
+        font-family: 'Barlow', sans-serif;
+        padding: 0em 1em;
+        line-height: 1.5em;
+        font-size: 14px; }
+  .app-container .app-orange-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(10, 10%); }
+    .app-container .app-orange-container .app-orange-img-box {
+      grid-column: 1/11;
+      grid-row: 1/11;
+      height: 100%;
+      width: 100%; }
+      .app-container .app-orange-container .app-orange-img-box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .app-container .app-orange-container .app-orange-text-box {
+      grid-column: 1/11;
+      grid-row: 8/11;
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      padding: 0em 2em; }
+      .app-container .app-orange-container .app-orange-text-box h1 {
+        font-size: 18px;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        color: #19536b;
+        margin-bottom: 1em; }
+      .app-container .app-orange-container .app-orange-text-box p {
+        color: #19536b;
+        font-weight: 700;
+        font-family: 'Barlow', sans-serif;
+        padding: 0em 1em;
+        line-height: 1.5em;
+        font-size: 14px; }
+  .app-container .app-testimonials-box {
+    display: flex;
+    flex-flow: column;
+    text-align: center; }
+    .app-container .app-testimonials-box h6 {
+      margin: 3em 0em;
+      color: #a7abae;
+      font-family: 'Fraunces', serif;
+      letter-spacing: 3px;
+      font-weight: 800; }
+    .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box {
+      display: flex;
+      flex-flow: column;
+      margin-bottom: 4em; }
+      .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-img-box {
+        width: 100%;
+        height: 100%; }
+        .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-img-box img {
+          border-radius: 100px;
+          width: 75px;
+          height: 75px; }
+      .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-text {
+        margin: 2em;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        color: #5a636c;
+        padding: 0em 2em; }
+      .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-info #client-name {
+        font-family: 'Fraunces', serif;
+        color: #23303e;
+        font-weight: 900;
+        margin-bottom: .5em; }
+      .app-container .app-testimonials-box .app-testimonials-client-wrapper .app-testimonials-client-box .app-testimonials-client-info #client-occupation {
+        font-family: 'Barlow', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: #a7abae; }
+  .app-container .app-four-square-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0px !important; }
+    .app-container .app-four-square-container .app-four-square-bottles {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      width: 100%;
+      height: 100%; }
+      .app-container .app-four-square-container .app-four-square-bottles img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .app-container .app-four-square-container .app-four-square-orange {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 100%;
+      height: 100%; }
+      .app-container .app-four-square-container .app-four-square-orange img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .app-container .app-four-square-container .app-four-square-cone {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      width: 100%;
+      height: 100%; }
+      .app-container .app-four-square-container .app-four-square-cone img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .app-container .app-four-square-container .app-four-square-sugarcube {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      width: 100%;
+      height: 100%; }
+      .app-container .app-four-square-container .app-four-square-sugarcube img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .app-container .app-footer-container {
+    display: flex;
+    flex-flow: column;
+    background: #8fd3c4;
+    color: #458c7e;
+    text-align: center;
+    font-family: 'Barlow', sans-serif; }
+    .app-container .app-footer-container h1 {
+      font-size: 32px;
+      font-weight: 900;
+      margin: 1.5em;
+      color: #2b7463; }
+    .app-container .app-footer-container .app-footer {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      font-weight: 800;
+      margin-bottom: 5em;
+      font-size: 18px; }
+    .app-container .app-footer-container .app-footer-social {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      margin-bottom: 5em;
+      text-align: center; }
+      .app-container .app-footer-container .app-footer-social * {
+        margin: 0em .5em; } }
