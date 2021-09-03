@@ -1,23 +1,36 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.a617e044.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.06e02ff9.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.06e02ff9.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.0d689cfa.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.0d689cfa.js.map",
-    "static/js/2.29cd3540.chunk.js": "/react-gh-pages/static/js/2.29cd3540.chunk.js",
-    "static/js/2.29cd3540.chunk.js.map": "/react-gh-pages/static/js/2.29cd3540.chunk.js.map",
-    "static/js/3.5d9377a0.chunk.js": "/react-gh-pages/static/js/3.5d9377a0.chunk.js",
-    "static/js/3.5d9377a0.chunk.js.map": "/react-gh-pages/static/js/3.5d9377a0.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/react-gh-pages/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.29cd3540.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.29cd3540.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/react-gh-pages/static/media/logo.6ce24c58.svg"
+    "main.css": "/frontendmentor-sunnyside-agency/static/css/main.9520fd2c.chunk.css",
+    "main.js": "/frontendmentor-sunnyside-agency/static/js/main.5d7c0a91.chunk.js",
+    "main.js.map": "/frontendmentor-sunnyside-agency/static/js/main.5d7c0a91.chunk.js.map",
+    "runtime-main.js": "/frontendmentor-sunnyside-agency/static/js/runtime-main.5e1df6ae.js",
+    "runtime-main.js.map": "/frontendmentor-sunnyside-agency/static/js/runtime-main.5e1df6ae.js.map",
+    "static/js/2.8ab93e96.chunk.js": "/frontendmentor-sunnyside-agency/static/js/2.8ab93e96.chunk.js",
+    "static/js/2.8ab93e96.chunk.js.map": "/frontendmentor-sunnyside-agency/static/js/2.8ab93e96.chunk.js.map",
+    "static/js/3.9660a02e.chunk.js": "/frontendmentor-sunnyside-agency/static/js/3.9660a02e.chunk.js",
+    "static/js/3.9660a02e.chunk.js.map": "/frontendmentor-sunnyside-agency/static/js/3.9660a02e.chunk.js.map",
+    "index.html": "/frontendmentor-sunnyside-agency/index.html",
+    "static/css/main.9520fd2c.chunk.css.map": "/frontendmentor-sunnyside-agency/static/css/main.9520fd2c.chunk.css.map",
+    "static/js/2.8ab93e96.chunk.js.LICENSE.txt": "/frontendmentor-sunnyside-agency/static/js/2.8ab93e96.chunk.js.LICENSE.txt",
+    "static/media/icon-arrow-down.979ef07a.svg": "/frontendmentor-sunnyside-agency/static/media/icon-arrow-down.979ef07a.svg",
+    "static/media/image-gallery-cone.461ff421.jpg": "/frontendmentor-sunnyside-agency/static/media/image-gallery-cone.461ff421.jpg",
+    "static/media/image-gallery-cone.fb0906a7.jpg": "/frontendmentor-sunnyside-agency/static/media/image-gallery-cone.fb0906a7.jpg",
+    "static/media/image-gallery-milkbottles.df1d9d84.jpg": "/frontendmentor-sunnyside-agency/static/media/image-gallery-milkbottles.df1d9d84.jpg",
+    "static/media/image-gallery-orange.373d43f1.jpg": "/frontendmentor-sunnyside-agency/static/media/image-gallery-orange.373d43f1.jpg",
+    "static/media/image-gallery-orange.49f4212b.jpg": "/frontendmentor-sunnyside-agency/static/media/image-gallery-orange.49f4212b.jpg",
+    "static/media/image-gallery-sugar-cubes.fefc3841.jpg": "/frontendmentor-sunnyside-agency/static/media/image-gallery-sugar-cubes.fefc3841.jpg",
+    "static/media/image-gallery-sugarcubes.09b72f4f.jpg": "/frontendmentor-sunnyside-agency/static/media/image-gallery-sugarcubes.09b72f4f.jpg",
+    "static/media/image-graphic-design.09c20c2d.jpg": "/frontendmentor-sunnyside-agency/static/media/image-graphic-design.09c20c2d.jpg",
+    "static/media/image-graphic-design.7ac8bdf0.jpg": "/frontendmentor-sunnyside-agency/static/media/image-graphic-design.7ac8bdf0.jpg",
+    "static/media/image-header.49b52ffa.jpg": "/frontendmentor-sunnyside-agency/static/media/image-header.49b52ffa.jpg",
+    "static/media/image-header.9167cda0.jpg": "/frontendmentor-sunnyside-agency/static/media/image-header.9167cda0.jpg",
+    "static/media/image-photography.104cf40b.jpg": "/frontendmentor-sunnyside-agency/static/media/image-photography.104cf40b.jpg",
+    "static/media/image-photography.26df83b3.jpg": "/frontendmentor-sunnyside-agency/static/media/image-photography.26df83b3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d689cfa.js",
-    "static/js/2.29cd3540.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.06e02ff9.chunk.js"
+    "static/js/runtime-main.5e1df6ae.js",
+    "static/js/2.8ab93e96.chunk.js",
+    "static/css/main.9520fd2c.chunk.css",
+    "static/js/main.5d7c0a91.chunk.js"
   ]
 }
